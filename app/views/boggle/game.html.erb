@@ -1,0 +1,17 @@
+<h1>Boggle#game</h1>
+
+<p><%=@grid%></p>
+
+<form action="score">
+  <div class="container">
+    <div class="form-group">
+      <label for="reponse">entrez votre reponse</label>
+      <input type="hidden" name="grid" value="<%= @grid.join %>">
+      <input type="hidden" name="start_time" value="<%= Time.now %>">
+      <input type="text" class="form-control" name='answer' id="reponse" placeholder="reponse">
+      <input class="btn btn-default" type="submit" value="Submit">
+    </div>
+  </div>
+</form>
+
+
